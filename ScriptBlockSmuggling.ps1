@@ -8,3 +8,5 @@ $Ast = [System.Management.Automation.Language.ScriptBlockAst]::new($SpoofedAst.E
                                                                    $ExecutedAst.EndBlock.Copy(),
                                                                    $null)
 $Sb = $Ast.GetScriptBlock()
+
+& $Sb
