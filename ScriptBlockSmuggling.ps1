@@ -11,4 +11,4 @@ $Sb = $Ast.GetScriptBlock()
 
 & $Sb
 
-PSConsoleHostReadLine
+amsicontext
